@@ -3,7 +3,6 @@ import numpy as np
 from collections import Counter
 from scipy.stats import entropy
 
-
 def get_spl(wav):
     '''
     max sound pressure level (decibel) at each timestamp, dtype=np.array
