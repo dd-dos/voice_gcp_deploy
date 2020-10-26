@@ -2,4 +2,4 @@
 flask
 firebase_admin
 librosa
-mlchain==0.1.7
+mlchain==0.1.8rc1
