@@ -1,7 +1,7 @@
 # AI interview scoring system
 
 ## Features
-- Evaluate candidate's reaction, loudness, impression and tempo score in 1-10 scale
+- Evaluate candidate's reaction, loudness and tempo score in 1-10 scale
 
 ## Requirements
 - Python 3.6
