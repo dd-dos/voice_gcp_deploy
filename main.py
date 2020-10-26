@@ -20,13 +20,6 @@ class VoiceModel:
         """
         return voice_metric.get_loudness_score(wav_data)
 
-    def get_impression_score(self, wav_data:np.ndarray):
-        """
-        Process Impression score 
-        :wav_data: Input voice data, read by librosa
-        """
-        return voice_metric.get_impression_score(wav_data)
-
     def get_tempo_score(self, wav_data:np.ndarray):
         """
         Process Tempo score 
@@ -42,6 +35,5 @@ class VoiceModel:
         return {
             "score_reaction": voice_metric.get_reaction_score(wav_data), 
             "score_tempo": voice_metric.get_tempo_score(wav_data),
-            "score_impression": voice_metric.get_impression_score(wav_data), 
             "score_loudness": voice_metric.get_loudness_score(wav_data)
         }

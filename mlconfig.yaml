@@ -1,6 +1,6 @@
 name: mlchain-voice-server # name of service
 entry_file: server.py # python file contains object ServeModel
-host: localhost # host service
+host: 0.0.0.0 # host service
 port: 5000 # port service
 server: flask # option flask or quart or grpc
 wrapper: gunicorn # option None or gunicorn or hypercorn
