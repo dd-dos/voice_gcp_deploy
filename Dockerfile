@@ -7,5 +7,4 @@ RUN apt-get install libsndfile1 -y
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-EXPOSE 5000/tcp
 RUN ["mlchain", "run"]
