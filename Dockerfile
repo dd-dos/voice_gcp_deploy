@@ -7,4 +7,3 @@ RUN apt-get install libsndfile1 -y
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-RUN ["mlchain", "run"]
