@@ -1,3 +1,8 @@
 steps:
-    - name: 'bash'
+    - name: 'gcr.io/cloud-builder/gcloud'
+      entrypoint: 'bash'
+      args: ['echo', 'prepare to compose...']
+
+    - name: 'gcr.io/cloud-builder/gcloud'
+      entrypoint: 'bash'
       args: ['docker-compose', 'up']
