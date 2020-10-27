@@ -12,8 +12,7 @@ steps:
     - name: 'gcr.io/cloud-builders/docker'
       args: ['run', '-it', '-p', '8080:5000', 'gcr.io/$PROJECT_ID/voice_analysis_image:latest', '/bin/bash']
 
-    - name: 'gcr.io/cloud-builder/gcloud'
-      entrypoint: 'bash'
+    - name: 'bash'
       args: ['mlchain', 'run']
 
       
